@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse handmade fuse-bead creations by Bexelized.">
+  <title>Bexelized | Car Hanging</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/products.js" defer></script>
+  <script src="js/app.js" defer></script>
+</head>
+<body data-category="earrings">
+  <header class="site-header">
+    <a class="brand" href="index.html" aria-label="Bexelized home">
+      <span class="brand-mark">b.</span><span>BEXELIZED</span>
+    </a>
+    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" aria-label="Product categories">
+      <a href="index.html" data-nav="car-hanging">Car Hanging</a>
+      <a href="bag.html" data-nav="bag">Bag</a>
+      <a href="hanging.html" data-nav="hanging">Hanging</a>
+      <a href="earrings.html" data-nav="earrings">Earrings</a>
+      <a href="customized.html" data-nav="customized">Customized</a>
+    </nav>
+    <div class="header-actions">
+  <a class="survey-link" href="https://forms.gle/oTZRgMwAg2fXmKsX6"
+     target="_blank" rel="noopener noreferrer">Rate Us ↗</a>
+
+  <a class="instagram-link" href="https://www.instagram.com/bexelized/"
+     target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+</div>
+  </header>
+
+  <main>
+    <section class="intro">
+      <p class="eyebrow">HANDMADE, ONE BEAD AT A TIME</p>
+      <h1 id="page-title">Car Hanging</h1>
+      <p class="intro-copy">Little pieces of colour, made to go wherever you go.</p>
+    </section>
+
+    <section class="catalog" aria-label="Product gallery">
+      <div class="filter-heading">
+        <div>
+          <p class="eyebrow">FIND YOUR STYLE</p>
+          <h2>Explore the collection</h2>
+        </div>
+        <p class="result-count" id="result-count" aria-live="polite"></p>
+      </div>
+      <div class="filters" role="group" aria-label="Filter products by style">
+        <button class="filter-button active" data-filter="all">All</button>
+        <button class="filter-button" data-filter="anime">Anime</button>
+        <button class="filter-button" data-filter="game">Game</button>
+        <button class="filter-button" data-filter="cartoon">Cartoon</button>
+        <button class="filter-button" data-filter="other">Other</button>
+      </div>
+      <div class="product-grid" id="product-grid"></div>
+      <p class="empty-state" id="empty-state" hidden>No products in this style yet. Try another filter.</p>
+    </section>
+
+    <section class="order-note">
+      <span class="order-sparkle">✳</span>
+      <div>
+        <h2>Found your favourite?</h2>
+        <p>Send us a DM on Instagram to ask about or order a design.</p>
+      </div>
+      <a class="dm-button" href="https://www.instagram.com/bexelized/" target="_blank" rel="noreferrer">Message us ↗</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="index.html"><span class="brand-mark">b.</span><span>BEXELIZED</span></a>
+    <p>Made with colour. Made with care.</p>
+  </footer>
+</body>
+</html>
