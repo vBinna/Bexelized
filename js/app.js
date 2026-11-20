@@ -28,10 +28,13 @@ document.addEventListener("DOMContentLoaded", () => {
   const buttons = document.querySelectorAll(".filter-button");
 
   function render(filter = "all") {
+    if (!grid || !count || !empty) return;
+
     const shown = products.filter(product =>
-      (category === "home"
+      category === "home"
         ? (filter === "all" || product.category === filter)
-        : product.category === category && (filter === "all" || product.style === filter))
+        : product.category === category &&
+          (filter === "all" || product.style === filter)
     );
 
     grid.innerHTML = "";
