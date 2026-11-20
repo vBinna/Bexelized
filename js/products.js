@@ -113,6 +113,7 @@ const products = [
   style: "game",
   variants: [
     { name: "Purple", color: "#9b78c9", image: "images/68.jpg" },
+    { name: "Purple", color: "#e98eae", image: "images/68.jpg" }
   ]
 },
   { name: "Flower", category: "bag", style: "other", image: "images/53.jpg" },
