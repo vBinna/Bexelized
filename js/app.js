@@ -149,3 +149,47 @@ document.addEventListener("DOMContentLoaded", () => {
 
   render();
 });
+
+
+document.addEventListener("DOMContentLoaded", () => {
+  const container = document.getElementById("latest-categories");
+
+  if (!container || typeof products === "undefined") return;
+
+  const categories = [
+    { id: "car-hanging", name: "Car Hanging", link: "car-hanging.html" },
+    { id: "bag", name: "Bag", link: "bag.html" },
+    { id: "hanging", name: "Hanging", link: "hanging.html" },
+    { id: "earrings", name: "Earrings", link: "earrings.html" },
+    { id: "customized", name: "Customized", link: "customized.html" }
+  ];
+
+  categories.forEach(category => {
+    const latest = products
+      .filter(product => product.category === category.id)
+      .slice(0, 3);
+
+    if (!latest.length) return;
+
+    const section = document.createElement("section");
+    section.className = "latest-category";
+
+    section.innerHTML = `
+      <div class="latest-category-heading">
+        <h3>${category.name}</h3>
+        <a href="${category.link}">View all ↗</a>
+      </div>
+
+      <div class="latest-carousel">
+        ${latest.map(product => `
+          <article class="latest-card">
+            <img src="${product.image}" alt="${product.name}" loading="lazy">
+            <h4>${product.name}</h4>
+          </article>
+        `).join("")}
+      </div>
+    `;
+
+    container.appendChild(section);
+  });
+});

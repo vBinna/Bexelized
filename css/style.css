@@ -161,3 +161,103 @@ h1, h2 { font-family: "Outfit", sans-serif; }
   .events-subtitle { line-height: 1.5; }
   .event-gallery { grid-template-columns: 1fr 1fr; gap: 14px; }
 }
+
+/* Category shortcuts */
+
+.category-shortcuts,
+.latest-section {
+  margin: 65px auto;
+  width: min(1100px, 90%);
+}
+
+.category-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 25px;
+}
+
+.category-buttons a {
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid #ddd;
+  border-radius: 30px;
+  padding: 12px 22px;
+  transition: 0.25s ease;
+}
+
+.category-buttons a:hover {
+  background: #b9e8df;
+  border-color: #b9e8df;
+  transform: translateY(-3px);
+}
+
+/* Latest creations */
+
+.latest-category {
+  margin: 35px 0;
+}
+
+.latest-category-heading {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.latest-category-heading a {
+  text-decoration: none;
+  color: inherit;
+  font-size: 14px;
+}
+
+.latest-carousel {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(0, 1fr);
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 18px;
+}
+
+.latest-card {
+  min-width: 0;
+  overflow: hidden;
+  border-radius: 16px;
+  animation: fadeUp 0.5s ease both;
+}
+
+.latest-card img {
+  width: 100%;
+  aspect-ratio: 1;
+  object-fit: cover;
+  border-radius: 16px;
+  display: block;
+}
+
+.latest-card h4 {
+  margin: 10px 0;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 600px) {
+  .latest-carousel {
+    grid-auto-columns: 75%;
+    grid-template-columns: none;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+  }
+
+  .latest-card {
+    scroll-snap-align: start;
+  }
+}
