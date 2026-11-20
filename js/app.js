@@ -1,8 +1,8 @@
-
 document.addEventListener("DOMContentLoaded", () => {
   const category = document.body.dataset.category || "car-hanging";
 
   const titles = {
+    home: "Home",
     "car-hanging": "Car Hanging",
     bag: "Bag",
     hanging: "Hanging",
@@ -12,7 +12,8 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const title = titles[category] || "Collection";
   document.title = `Bexelized | ${title}`;
-  document.getElementById("page-title").textContent = title;
+  const pageTitle = document.getElementById("page-title");
+  if (pageTitle) pageTitle.textContent = title;
 
   document.querySelectorAll("[data-nav]").forEach(link => {
     if (link.dataset.nav === category) {
@@ -28,8 +29,9 @@ document.addEventListener("DOMContentLoaded", () => {
 
   function render(filter = "all") {
     const shown = products.filter(product =>
-      product.category === category &&
-      (filter === "all" || product.style === filter)
+      (category === "home"
+        ? (filter === "all" || product.category === filter)
+        : product.category === category && (filter === "all" || product.style === filter))
     );
 
     grid.innerHTML = "";

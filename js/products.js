@@ -115,10 +115,10 @@ const products = [
   variants: [
     { name: "White", color: "#f8f8f8", image: "images/57.jpg" },
     { name: "Brown", color: "#7c4a12", image: "images/59.jpg" },
-    { name: "Black", color: "#0e0e0e", image: "images/0.jpg" }
+    { name: "Black", color: "#0e0e0e", image: "images/59.jpg" } // تعديل
   ]
 },
-  { name: "", category: "bag", style: "other", image: "images/.jpg" },
+  //{ name: "", category: "bag", style: "other", image: "images/.jpg" },
   
 
 
