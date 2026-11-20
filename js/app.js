@@ -181,12 +181,16 @@ document.addEventListener("DOMContentLoaded", () => {
       </div>
 
       <div class="latest-carousel">
-        ${latest.map(product => `
-          <article class="latest-card">
-            <img src="${product.image}" alt="${product.name}" loading="lazy">
-            <h4>${product.name}</h4>
-          </article>
-        `).join("")}
+        ${latest.map(product => {
+          const image = product.variants?.[0]?.image || product.image;
+
+          return `
+            <article class="latest-card">
+              <img src="${image}" alt="${product.name}" loading="lazy">
+              <h4>${product.name}</h4>
+            </article>
+          `;
+        }).join("")}
       </div>
     `;
 
