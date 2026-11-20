@@ -85,6 +85,16 @@ const products = [
     { name: "Rainbow Dash", color: "#579bd5", image: "images/62.jpg" }
   ]
 },
+{
+  name: "Butterfly",
+  category: "bag",
+  style: "other",
+  variants: [
+    { name: "White", color: "#579bd5", image: "images/70.jpg" },
+    { name: "Brown", color: "#e4d061", image: "images/71.jpg" },
+    { name: "Black", color: "#55a96b", image: "images/72.jpg" }
+  ]
+},
   { name: "Pink Fionka", category: "bag", style: "other", image: "images/17.jpg" },
   { name: "Teacup", category: "bag", style: "other", image: "images/36.jpg" },
   { name: "One Piece Skull", category: "bag", style: "anime", image: "images/35.jpg" },
@@ -96,6 +106,7 @@ const products = [
   { name: "Bullet Bill", category: "bag", style: "game", image: "images/64.jpg" },
   { name: "Among Us", category: "bag", style: "game", image: "images/65.jpg" },
   { name: "1-Up Mushroom", category: "bag", style: "game", image: "images/67.jpg" },
+  { name: "Miles Morales", category: "bag", style: "game", image: "images/76.jpg" },
 {
   name: "Laser Sword",
   category: "bag",
@@ -115,7 +126,7 @@ const products = [
   variants: [
     { name: "White", color: "#f8f8f8", image: "images/57.jpg" },
     { name: "Brown", color: "#7c4a12", image: "images/59.jpg" },
-    { name: "Black", color: "#0e0e0e", image: "images/59.jpg" } // تعديل
+    { name: "Black", color: "#0e0e0e", image: "images/75.jpg" } // تعديل
   ]
 },
   //{ name: "", category: "bag", style: "other", image: "images/.jpg" },
@@ -150,5 +161,6 @@ const products = [
   { name: "Flower", category: "customized", style: "other", image: "images/60.jpg" },
   { name: "Batman Signal", category: "customized", style: "cartoon", image: "images/58.png" },
   { name: "Kunai", category: "customized", style: "game", image: "images/66.jpg" },
+  { name: "Ocean Waves", category: "customized", style: "game", image: "images/69.jpg" }
 
 ];
