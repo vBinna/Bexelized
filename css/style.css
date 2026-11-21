@@ -274,3 +274,18 @@ h1, h2 { font-family: "Outfit", sans-serif; }
   height: 32px;
   max-width: 130px;
 }
+
+.site-header .brand img {
+  display: block;
+  width: auto;
+  height: 42px;
+  max-width: 160px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.site-footer .brand img {
+  height: 32px;
+  width: auto;
+  max-width: 130px;
+}
