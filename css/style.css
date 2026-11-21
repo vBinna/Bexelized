@@ -289,3 +289,23 @@ h1, h2 { font-family: "Outfit", sans-serif; }
   width: auto;
   max-width: 130px;
 }
+
+/* Logo size fix */
+.site-header a.brand > img {
+    width: 160px !important;
+    height: 42px !important;
+    max-width: 160px !important;
+    max-height: 42px !important;
+    object-fit: contain;
+    display: block;
+    flex-shrink: 0;
+}
+
+.site-footer a.brand > img {
+    width: 130px !important;
+    height: 32px !important;
+    max-width: 130px !important;
+    max-height: 32px !important;
+    object-fit: contain;
+    display: block;
+}
