@@ -262,34 +262,6 @@ h1, h2 { font-family: "Outfit", sans-serif; }
   }
 }
 
-.brand img {
-  height: 42px;
-  width: auto;
-  max-width: 160px;
-  object-fit: contain;
-  display: block;
-}
-
-.footer-brand img {
-  height: 32px;
-  max-width: 130px;
-}
-
-.site-header .brand img {
-  display: block;
-  width: auto;
-  height: 42px;
-  max-width: 160px;
-  object-fit: contain;
-  flex-shrink: 0;
-}
-
-.site-footer .brand img {
-  height: 32px;
-  width: auto;
-  max-width: 130px;
-}
-
 /* Logo size fix */
 .site-header a.brand > img {
     width: 160px !important;
